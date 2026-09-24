@@ -6,7 +6,7 @@ from twilio.rest import Client
 
 SENDERS_EMAIL = os.environ.get("SENDERS_EMAIL")
 RECEIVERS_EMAIL = os.environ.get("RECEIVERS_EMAIL")
-PASSWORD = os.environ.get("EMAIL_PASSWORD")
+PASSWORD = os.environ.get("PASSWORD")
 
 api_key = os.environ.get("OWM_API_KEY")
 account_sid = os.environ.get("ACCOUNT_SID")
