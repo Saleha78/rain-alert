@@ -3,7 +3,7 @@ name: Rain Alert
 on:
   workflow_dispatch:
   schedule:
-    - cron: "30 3 * * *"
+    - cron: "30 1 * * *"
 
 jobs:
   run-rain-alert:
@@ -26,4 +26,7 @@ jobs:
           OWM_API_KEY: ${{ secrets.OWM_API_KEY }}
           ACCOUNT_SID: ${{ secrets.ACCOUNT_SID }}
           AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
+          SENDERS_EMAIL: ${{ secrets.SENDERS_EMAIL }}
+          RECEIVERS_EMAIL: ${{ secrets.RECEIVERS_EMAIL }}
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
         run: python main.py
