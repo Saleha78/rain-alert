@@ -47,18 +47,19 @@ if will_rain:
     )
 
     email = EmailMessage()
-    email["Subject"] = "☔ A Little Reminder for You, Sis! ❤️"
+    email["Subject"] = "🌧️ A Little Rainy-Day Reminder — Chas, Bokaro"
     email["From"] = SENDERS_EMAIL
     email["To"] = RECEIVERS_EMAIL
 
     email.set_content(
-        "Hey Sis! ❤️\n\n"
-        "Looks like rain is on the way! 🌧️\n\n"
-        "Please don't forget to carry your umbrella before you head out. ☔ "
-        "Take care of yourself, stay dry, and don't get sick! 🫶\n\n"
-        "Have a lovely day! 💕\n\n"
-        "— Saleha"
-    )
+    "🌧️ RAINY-DAY REMINDER\n\n"
+    "Hey Sis! ❤️ Just a little heads-up for you.\n\n"
+    "📍 Location: Chas, Bokaro, Jharkhand\n\n"
+    "It looks like rain is expected in the next 3 hours, "
+    "so if you're heading out, don't forget to take an umbrella with you! ☂️\n\n"
+    "Stay dry, stay cozy, and have a lovely day. 💙\n\n"
+    "— Saleha 🌦️"
+   )
 
     connection.send_message(email)
     connection.close()
