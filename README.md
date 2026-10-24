@@ -14,7 +14,7 @@ A Python automation project that checks the weather forecast and sends a persona
 
 Here's an example of the actual email sent by my Rain Alert automation.
 
-![Rain Alert Email Screenshot](images/rain-alert-email.png)
+![Rain Alert Email Screenshot](rain-alert-email.png)
 
 *The notification includes the location, expected rainfall timeframe, and a friendly reminder to carry an umbrella.*
 
